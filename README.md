@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реестр лиц, создающих условия для педагогической напряжённости</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e8e8e8;
+            font-family: 'Times New Roman', 'Georgia', 'Cambria', serif;
+            color: #1a1a1a;
+            padding: 30px 20px;
+        }
+
+        .document {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            border-left: 1px solid #aaa;
+            border-right: 1px solid #aaa;
+            padding: 40px 35px;
+        }
+
+        .header {
+            border-bottom: 2px solid #1e3a5f;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .emblem {
+            font-size: 38px;
+            font-weight: normal;
+            color: #1e3a5f;
+        }
+
+        .emblem-text {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4a627a;
+            margin-top: 5px;
+        }
+
+        .registry-meta {
+            text-align: right;
+            font-size: 11px;
+            color: #555;
+            border-left: 1px solid #ccc;
+            padding-left: 18px;
+        }
+
+        .title-main {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1e3a5f;
+            margin: 20px 0 5px 0;
+            border-left: 4px solid #8b0000;
+            padding-left: 18px;
+        }
+
+        .subtitle {
+            font-size: 13px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-left: 4px solid #8b0000;
+            padding-left: 18px;
+            font-style: italic;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+
+        .registry-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .registry-table th {
+            background-color: #eef2f5;
+            border: 1px solid #8a8a8a;
+            padding: 11px 8px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            color: #1e3a5f;
+        }
+
+        .registry-table td {
+            border: 1px solid #999;
+            padding: 10px 8px;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+
+        .star {
+            font-weight: bold;
+        }
+
+        .star::after {
+            content: "*";
+            color: #8b0000;
+            margin-left: 2px;
+            font-weight: bold;
+        }
+
+        .wanted-badge {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            font-size: 9px;
+            padding: 2px 6px;
+            margin-left: 8px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .footnotes {
+            margin-top: 30px;
+            font-size: 10px;
+            border-top: 1px solid #aaa;
+            padding-top: 18px;
+            color: #333;
+        }
+
+        .footnotes p {
+            margin: 6px 0;
+        }
+
+        .signature {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            border-top: 1px solid #bbb;
+            padding-top: 20px;
+        }
+
+        .stamp {
+            font-family: monospace;
+            color: #1e3a5f;
+        }
+
+        .measure-list, .legal-list, .amnesty-list {
+            margin: 15px 0 0 0;
+            padding-left: 20px;
+            font-size: 12px;
+        }
+
+        .measure-list li, .legal-list li, .amnesty-list li {
+            margin: 8px 0;
+        }
+
+        h3 {
+            font-size: 14px;
+            margin: 20px 0 10px 0;
+            color: #1e3a5f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .legal-section, .amnesty-section {
+            background-color: #faf9f5;
+            border-left: 3px solid #8b0000;
+            padding: 15px 20px;
+            margin: 20px 0;
+        }
+
+        .amnesty-section {
+            border-left-color: #2e7d32;
+            background-color: #f5f9f5;
+        }
+    </style>
+</head>
+<body>
+<div class="document">
+    <div class="header">
+        <div>
+            <div class="emblem">⚖️</div>
+            <div class="emblem-text">Государственная информационная система<br>Суверенного Государства «Mr. Fedya»</div>
+        </div>
+        <div class="registry-meta">
+            Форма № Р-47/ИА<br>
+            Утверждён Указом от 10.11.2025<br>
+            Редакция от 02.05.2026
+        </div>
+    </div>
+
+    <div class="title-main">
+        Персональный реестр лиц, создающих условия для педагогической напряжённости<br>
+        (школьный сегмент, школа №47)
+    </div>
+    <div class="subtitle">
+        Сведения о лицах, в отношении которых установлены факты систематического противоправного воздействия,<br>
+        нарушения образовательного процесса, морально-этического равновесия, а также подверженных внешнему влиянию
+    </div>
+
+    <div class="table-wrapper">
+        <table class="registry-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Фамилия, Имя, Отчество</th>
+                    <th>Дата включения</th>
+                    <th>Основание включения</th>
+                    <th>Особый статус</th>
+                </tr>
+            </thead>
+            <tbody id="registry-body">
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Применяемые меры (в отношении всех лиц, внесённых в реестр)</h3>
+    <ul class="measure-list">
+        <li>Бессрочный запрет на упоминание в личных, публичных и цифровых пространствах Главы Государства.</li>
+        <li>Изгнание из всех форм ностальгических, мемориальных и эмоциональных контекстов.</li>
+        <li>Запрет на обращение к Главе Государства через третьих лиц.</li>
+        <li>При необходимом упоминании Главы Государства (что запрещено настоящими мерами) обязательно указывать в нижней части фото/видео/текстового материала:<br>
+        <em>«Я, [Ф.И.О. лица], лицо, выполняющее статус иноагента, подтверждаю, что нахожусь в реестре иностранных агентов школы №47»</em>.</li>
+        <li>Лица, объявленные иноагентами в настоящем реестре, обязаны упоминать о наличии статуса в каждом видео/фото/текстовом материале.</li>
+    </ul>
+
+    <div class="legal-section">
+        <h3 style="margin-top: 0;">Юридические последствия включения в реестр</h3>
+        <ul class="legal-list">
+            <li><strong>1. Режим персональных санкций:</strong> Все лица, включённые в реестр, находятся под полным санкционным давлением Суверенного Государства «Mr. Fedya». Любое взаимодействие с ними со стороны третьих лиц расценивается как недружественный акт.</li>
+            <li><strong>2. Запрет на территориальный доступ:</strong> Въезд и нахождение на территориях, контролируемых Главой Государства (включая личное пространство, зоны прямого эфира, веломаршруты и Пряничный Домик), категорически запрещён.</li>
+            <li><strong>3. Конфискация упоминаний:</strong> Все фото-, видео- и текстовые материалы, содержащие упоминания Главы Государства со стороны лиц из реестра, подлежат удалению с последующей фиксацией нарушения.</li>
+            <li><strong>4. Эскалация ответственности:</strong> Систематические нарушения влекут перевод в категорию «особо опасные» с автоматическим добавлением звёздочки (*) и внесением в список международного розыска.</li>
+            <li><strong>5. Ответственность за вмешательство:</strong> Любая попытка нарушения санкционного режима расценивается как вмешательство во внутренние дела Суверенного Государства «Mr. Fedya».</li>
+            <li><strong>6. Апелляционный запрет:</strong> Решения по включению, исключению и изменению статуса обжалованию не подлежат.</li>
+        </ul>
+    </div>
+
+    <div class="amnesty-section">
+        <h3 style="margin-top: 0;">Положение об амнистии</h3>
+        <ul class="amnesty-list">
+            <li><strong>1. Право на амнистию:</strong> Глава Государства «Mr. Fedya» имеет право применять акт амнистии в отношении всех лиц, внесённых в настоящий реестр, независимо от тяжести совершённых деяний и наличия статуса «особо опасный» (*).</li>
+            <li><strong>2. Периодичность:</strong> Амнистия проводится два (2) раза в календарный год — <strong>1 мая</strong> и <strong>1 сентября</strong> каждого года.</li>
+            <li><strong>3. Порядок применения:</strong> В указанные даты Глава Государства вправе издать акт об исключении из реестра любого количества лиц по собственному усмотрению. Акт амнистии не требует обоснования.</li>
+            <li><strong>4. Юридические последствия амнистии:</strong> Лица, исключённые из реестра актом амнистии, полностью освобождаются от всех ограничений, запретов и санкций, предусмотренных настоящим документом. Статус иноагента аннулируется.</li>
+            <li><strong>5. Восстановление в реестре:</strong> Лица, исключённые актом амнистии, при совершении повторных деяний могут быть восстановлены в реестре на общих основаниях с датой включения, соответствующей дате нового правонарушения.</li>
+            <li><strong>6. Неприменение амнистии:</strong> Глава Государства оставляет за собой право не применять амнистию в установленные даты без объяснения причин. Отсутствие акта амнистии в указанные даты не является нарушением.</li>
+        </ul>
+        <p style="font-size: 11px; margin-top: 12px; color: #2e7d32;"><strong>Амнистия от 01.05.2026:</strong> актом Главы Государства от 01.05.2026 амнистия не применялась. Следующая дата — 01.09.2026.</p>
+    </div>
+
+    <div class="footnotes">
+        <p><strong>*</strong> — Лицо находится в разделе реестра «Особо опасные лица, находящиеся в международном розыске».</p>
+        <p><strong>Примечание 1:</strong> Все лица, включённые в реестр, автоматически получают статус «иностранный агент школы №47» со всеми вытекающими ограничениями.</p>
+        <p><strong>Примечание 2:</strong> Документ вступает в силу с момента публикации. Основания для исключения из реестра — амнистия либо индивидуальный акт Главы Государства.</p>
+    </div>
+
+    <div class="signature">
+        <div>
+            <strong>Подписано:</strong><br>
+            Беликов Фёдор Алексеевич (Mr. Fedya)<br>
+            Глава Государства, Телеведущий, Хранитель Пряничного Домика<br>
+            <em>10 ноября 2025 года (редакция от 02.05.2026)</em>
+        </div>
+        <div class="stamp">
+            [ ГЕРБОВАЯ ПЕЧАТЬ ]<br>
+            № Р-47/ИА-03<br>
+            Суверенное Государство «Mr. Fedya»
+        </div>
+    </div>
+</div>
+
+<script>
+    const registryData = [
+        { name: "Иванников Михаил Денисович", date: "05.05.2022", reason: "Систематические насмешки и словарные издевательства.", wanted: true },
+        { name: "Терехов Захар", date: "17.05.2025", reason: "Насмешки, словарные издевательства, эпизоды физического буллинга. Связь с организованной группой Пешкова В.А.", wanted: false },
+        { name: "Юров Пётр Юрьевич", date: "18.05.2025", reason: "Насмешки, словарные издевательства, эпизоды физического буллинга. Связь с организованной группой Пешкова В.А.", wanted: false },
+        { name: "Панасюк Фёдор", date: "16.05.2025", reason: "Насмешки, словарные издевательства, эпизоды физического буллинга. Связь с организованной группой Пешкова В.А.", wanted: false },
+        { name: "Пешков Вадим Андреевич", date: "31.12.2023", reason: "Организатор системного буллинга. Главный зачинщик физических и психологических атак.", wanted: true },
+        { name: "Самарин Артём Юрьевич", date: "01.11.2020", reason: "Применение физической силы к Главе Государства.", wanted: true },
+        { name: "Тарасов Матвей Андреевич", date: "18.12.2024", reason: "Насмешки, словарные издевательства, физические нападки. Финансовая зависимость от Пешкова В.А.", wanted: false },
+        { name: "Баюканский Александр Дмитриевич", date: "10.11.2025", reason: "Подверженность внешнему влиянию Иванникова М.Д. Создаёт риски непредсказуемого поведения.", wanted: false },
+        { name: "Кашникова Татьяна Андреевна", date: "15.07.2024", reason: "Подверженность внешнему влиянию Иванникова М.Д. Создаёт риски непредсказуемого поведения.", wanted: false },
+        { name: "Смородина Александра Сергеевна", date: "11.11.2025", reason: "Подверженность внешнему влиянию Иванникова М.Д. Создаёт риски непредсказуемого поведения.", wanted: false },
+        { name: "Строкова Яна Сергеевна", date: "11.11.2025", reason: "Подверженность внешнему влиянию Пешкова В.А. Создаёт риски непредсказуемого поведения.", wanted: false },
+        { name: "Уточкина Мария Дмитриевна", date: "11.11.2025", reason: "Подверженность внешнему влиянию Пешкова В.А. Создаёт риски непредсказуемого поведения.", wanted: false },
+        { name: "Гамаюнов Вячеслав Андреевич", date: "11.11.2025", reason: "Подверженность внешнему влиянию Пешкова В.А. Создаёт риски непредсказуемого поведения.", wanted: true },
+        { name: "Макарова Вероника Андреевна", date: "02.05.2026", reason: "Психологическое воздействие, повлёкшее развитие депрессивного расстройства у Главы Государства. Отягчающее обстоятельство: статус первой любви.", wanted: false }
+    ];
+
+    const tbody = document.getElementById('registry-body');
+    
+    registryData.forEach((item, index) => {
+        const row = tbody.insertRow();
+        
+        const cellNum = row.insertCell(0);
+        cellNum.textContent = (index + 1).toString();
+        
+        const cellName = row.insertCell(1);
+        let nameHtml = item.wanted ? `<span class="star">${item.name}</span>` : item.name;
+        if (item.wanted) {
+            nameHtml += ' <span class="wanted-badge">международный розыск</span>';
+        }
+        cellName.innerHTML = nameHtml;
+        
+        const cellDate = row.insertCell(2);
+        cellDate.textContent = item.date;
+        
+        const cellReason = row.insertCell(3);
+        cellReason.textContent = item.reason;
+        
+        const cellStatus = row.insertCell(4);
+        cellStatus.innerHTML = '<span style="color:#8b0000; font-weight:500;">иноагент школы №47</span>';
+    });
+</script>
+</body>
+</html>
