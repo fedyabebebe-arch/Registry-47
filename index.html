@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реестр лиц, создающих условия для педагогической напряжённости</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #e8e8e8;
+            font-family: 'Times New Roman', 'Georgia', 'Cambria', serif;
+            color: #1a1a1a;
+            padding: 30px 20px;
+        }
+        .document {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            border-left: 1px solid #aaa;
+            border-right: 1px solid #aaa;
+            padding: 40px 35px;
+        }
+        .header {
+            border-bottom: 2px solid #1e3a5f;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .emblem {
+            font-size: 38px;
+            font-weight: normal;
+            color: #1e3a5f;
+        }
+        .emblem-text {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4a627a;
+            margin-top: 5px;
+        }
+        .registry-meta {
+            text-align: right;
+            font-size: 11px;
+            color: #555;
+            border-left: 1px solid #ccc;
+            padding-left: 18px;
+        }
+        .title-main {
+            font-size: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1e3a5f;
+            margin: 20px 0 5px 0;
+            border-left: 4px solid #8b0000;
+            padding-left: 18px;
+        }
+        .subtitle {
+            font-size: 13px;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-left: 4px solid #8b0000;
+            padding-left: 18px;
+            font-style: italic;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 25px 0;
+        }
+        .registry-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .registry-table th {
+            background-color: #eef2f5;
+            border: 1px solid #8a8a8a;
+            padding: 11px 8px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            color: #1e3a5f;
+        }
+        .registry-table td {
+            border: 1px solid #999;
+            padding: 10px 8px;
+            vertical-align: top;
+            line-height: 1.4;
+        }
+        .agent-red {
+            color: #cc0000;
+            font-weight: 500;
+        }
+        .agent-green {
+            color: #2e7d32;
+            font-weight: 500;
+        }
+        .wanted-badge {
+            display: inline-block;
+            background-color: #8b0000;
+            color: white;
+            font-size: 9px;
+            padding: 2px 6px;
+            margin-left: 8px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .star {
+            font-weight: bold;
+            color: #8b0000;
+            margin-left: 2px;
+        }
+        .footnotes {
+            margin-top: 30px;
+            font-size: 10px;
+            border-top: 1px solid #aaa;
+            padding-top: 18px;
+            color: #333;
+        }
+        .footnotes p {
+            margin: 6px 0;
+        }
+        .signature {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            border-top: 1px solid #bbb;
+            padding-top: 20px;
+        }
+        .stamp {
+            font-family: monospace;
+            color: #1e3a5f;
+        }
+        .measure-list {
+            margin: 15px 0 0 0;
+            padding-left: 20px;
+            font-size: 12px;
+        }
+        .measure-list li {
+            margin: 8px 0;
+        }
+        h3 {
+            font-size: 14px;
+            margin: 20px 0 10px 0;
+            color: #1e3a5f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .links-section {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #aaa;
+            text-align: center;
+            font-size: 13px;
+        }
+        .links-section a {
+            color: #1e3a5f;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+        .contacts {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<div class="document">
+    <div class="header">
+        <div>
+            <div class="emblem">⚖️</div>
+            <div class="emblem-text">Государственная информационная система<br>Суверенного Государства «Mr. Fedya»</div>
+        </div>
+        <div class="registry-meta">
+            Форма № Р-47/ИА<br>
+            Утверждён Указом от 10.11.2025<br>
+            Редакция от 03.05.2026
+        </div>
+    </div>
+
+    <div class="title-main">
+        Персональный реестр лиц, создающих условия для педагогической напряжённости<br>
+        (школьный сегмент, школа №47)
+    </div>
+    <div class="subtitle">
+        Сведения о лицах, в отношении которых установлены факты систематического противоправного воздействия,<br>
+        нарушения образовательного процесса, морально-этического равновесия, а также подверженных внешнему влиянию
+    </div>
+
+    <div class="table-wrapper">
+        <table class="registry-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Фамилия, Имя, Отчество</th>
+                    <th>Дата включения</th>
+                    <th>Дата исключения</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody id="registry-body">
+            </tbody>
+        </table>
+    </div>
+
+    <h3>Применяемые меры (в отношении действующих иноагентов)</h3>
+    <ul class="measure-list">
+        <li>Бессрочный запрет на упоминание в личных, публичных и цифровых пространствах Главы Государства.</li>
+        <li>Изгнание из всех форм ностальгических, мемориальных и эмоциональных контекстов.</li>
+        <li>Запрет на обращение к Главе Государства через третьих лиц.</li>
+        <li>При необходимом упоминании обязательно указывать: «Я, [Ф.И.О.], иноагент школы №47».</li>
+    </ul>
+
+    <div class="footnotes">
+        <p><strong>*</strong> — Лица, отмеченные звездой, относятся к категории «особо опасные».</p>
+        <p><strong>Примечание 1:</strong> Исключённые из реестра лица утрачивают статус иноагента и все связанные с ним ограничения.</p>
+        <p><strong>Примечание 2:</strong> Документ вступает в силу с момента публикации.</p>
+    </div>
+
+    <div class="links-section">
+        📜 <a href="constitution.html">Конституция Суверенного Государства «Mr. Fedya»</a> &nbsp;|&nbsp;
+        ⚖️ <a href="polozhenie.html">Положение о Персональном реестре</a>
+    </div>
+
+    <div class="contacts">
+        По всем вопросам и предложениям — обращаться к Главе Государства:<br>
+        📧 <strong>mrfedya1@vk.com</strong>
+    </div>
+
+    <div class="signature">
+        <div>
+            <strong>Подписано:</strong><br>
+            Беликов Фёдор Алексеевич (Mr. Fedya)<br>
+            Глава Государства, Телеведущий, Хранитель Пряничного Домика<br>
+            <em>10 ноября 2025 года (редакция от 03.05.2026)</em>
+        </div>
+        <div class="stamp">
+            [ ГЕРБОВАЯ ПЕЧАТЬ ]<br>
+            № Р-47/ИА-04<br>
+            Суверенное Государство «Mr. Fedya»
+        </div>
+    </div>
+</div>
+
+<script>
+    const registryData = [
+        { name: "Иванников Михаил Денисович", dateIn: "05.05.2022", dateOut: "", status: "agent", wanted: true, star: true },
+        { name: "Терехов Захар", dateIn: "17.05.2025", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Юров Пётр Юрьевич", dateIn: "18.05.2025", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Панасюк Фёдор", dateIn: "16.05.2025", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Пешков Вадим Андреевич", dateIn: "31.12.2023", dateOut: "", status: "agent", wanted: true, star: true },
+        { name: "Самарин Артём Юрьевич", dateIn: "01.11.2020", dateOut: "", status: "agent", wanted: true, star: true },
+        { name: "Тарасов Матвей Андреевич", dateIn: "18.12.2024", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Баюканский Александр Дмитриевич", dateIn: "10.11.2025", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Киселёв Александр Александрович", dateIn: "05.05.2025", dateOut: "01.05.2026", status: "ex-rehab", wanted: false, star: false },
+        { name: "Кашникова Татьяна Андреевна", dateIn: "15.07.2024", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Смородина Александра Сергеевна", dateIn: "11.11.2025", dateOut: "03.05.2026", status: "ex-amnesty", wanted: false, star: false },
+        { name: "Строкова Яна Сергеевна", dateIn: "11.11.2025", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Уточкина Мария Дмитриевна", dateIn: "11.11.2025", dateOut: "", status: "agent", wanted: false, star: false },
+        { name: "Гамаюнов Вячеслав Андреевич", dateIn: "11.11.2025", dateOut: "", status: "agent", wanted: false, star: true },
+        { name: "Макарова Вероника Андреевна", dateIn: "02.05.2026", dateOut: "", status: "agent", wanted: false, star: false }
+    ];
+
+    const tbody = document.getElementById('registry-body');
+    
+    registryData.forEach((item, index) => {
+        const row = tbody.insertRow();
+        
+        const cellNum = row.insertCell(0);
+        cellNum.textContent = (index + 1).toString();
+        
+        const cellName = row.insertCell(1);
+        let nameHtml = item.name;
+        if (item.star) {
+            nameHtml += '<span class="star">*</span>';
+        }
+        if (item.wanted && item.status === "agent") {
+            nameHtml += ' <span class="wanted-badge">международный розыск</span>';
+        }
+        cellName.innerHTML = nameHtml;
+        
+        const cellDateIn = row.insertCell(2);
+        cellDateIn.textContent = item.dateIn;
+        
+        const cellDateOut = row.insertCell(3);
+        cellDateOut.textContent = item.dateOut || "—";
+        
+        const cellStatus = row.insertCell(4);
+        if (item.status === "agent") {
+            cellStatus.innerHTML = '<span class="agent-red">иноагент школы №47</span>';
+        } else if (item.status === "ex-rehab") {
+            cellStatus.innerHTML = '<span class="agent-green">не иноагент школы №47 (реабилитирован)</span>';
+        } else if (item.status === "ex-amnesty") {
+            cellStatus.innerHTML = '<span class="agent-green">не иноагент школы №47 (амнистия, реабилитирована)</span>';
+        }
+    });
+</script>
+</body>
+</html>
